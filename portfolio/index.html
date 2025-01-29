@@ -1,26 +1,215 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfolio Antonio Magni Rodriguez</title>
-    </head>
-    <body>
-        <h1>
-            ANTONIO MAGNI RODRIGUEZ
-        </h1>
-        <h2>
-            Mi primer portfolio
-        </h2>
-        <p>
-            Hola, soy Antonio Magni Rodriguez, estudiante de Desarrollo de Aplicaciones Web en el IES . 
-            En este portfolio podrás encontrar información sobre mi, mis proyectos y mis habilidades.
-        </p>
-        <p>
-            <a href="sobre-mi.html">Sobre mi</a>
-            <a href="habilidades.html">Habilidades</a>
-        </p>
-        <p>
-            <a href="proyectos.html">Proyectos</a>
-        </p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Antonio Magni Rodriguez</title>
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Hacer que el body ocupe toda la pantalla */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
 
-    </body>
+        /* Menú superior */
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white; 
+        }
+
+        .header .name {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .header .subtitle {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            color: #ff6600;
+        }
+
+        /* Contenedor principal (ocupa el espacio restante) */
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.696);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(168, 47, 47, 0.1);
+        }
+
+        .profile-img {
+            width: 45%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        .content {
+            width: 50%;
+            padding-left: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-img {
+                width: 80%;
+            }
+
+            .content {
+                width: 90%;
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+
+        .content h2 {
+            color: #ff6600;
+            border-bottom: 2px solid #ff6600;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .content p {
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 2px solid #ff6600;
+            color: #ff6600;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff6600;
+            color: white;
+        }
+
+        /* Footer fijo en la parte inferior */
+        .footer {
+            background-color: #000000;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #ff6600;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación superior -->
+    <div class="header">
+        <div>
+            <div class="name">Antonio Magni Rodríguez</div>
+            <div class="subtitle">Ingeniero Informático, Cantabria</div>
+        </div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Experiencia</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <div class="container">
+            <img src="../Imagenes/FOTO.jpg" alt="Antonio Magni Rodriguez" class="profile-img">
+            
+            <div class="content">
+                <h2>Experiencia Reciente</h2>
+                <p>RELLENAR.</p>
+
+                <h2>Proyectos Destacados</h2>
+                <p>RELLENAR.</p>
+
+                <a href="#" class="btn">Ver Proyectos</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer pegado abajo -->
+    <div class="footer">
+        <div>© 2024 by Antonio Magni Rodriguez. Todos los derechos reservados.</div>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a> <!-- Facebook -->
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> <!-- Twitter -->
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Instagram -->
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> <!-- LinkedIn -->
+        </div>
+    </div>
+
+</body>
 </html>
+
