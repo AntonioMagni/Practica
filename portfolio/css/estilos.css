@@ -1,3 +1,23 @@
+/* CSS general de elementos*/
+
 body {
-    background-color: bisque;
+    background-color: #222;
+    color: white
+}
+h3 {
+    color: #999
+}
+
+/* Si hay dos mismos atributos definidos se elige el ultimo 
+h3 {
+    color: white
+}
+*/
+/* CSS IDs y Clases */
+.hastag{
+    color: #ffc900
+}
+#experiencia{
+    background-color: white ;
+    color: #222
 }
