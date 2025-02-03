@@ -1,23 +1,65 @@
 /* CSS general de elementos*/
 
-body {
-    background-color: #222;
-    color: white
-}
-h3 {
-    color: #999
+*{
+    margin: 0;
+    padding: 0   
 }
 
-/* Si hay dos mismos atributos definidos se elige el ultimo 
+body {
+    background-color: #222;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+/* Se hace este id para que no se pegue el titulo con las lineas de abajo*/
+#nombre {
+    font-size: 36px;
+    line-height: 50px;
+}
+
 h3 {
-    color: white
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
 }
-*/
-/* CSS IDs y Clases */
+
+p{
+    text-align: justify;
+}
+
+cite{
+    font-weight: 300;
+}
+
+/* CSS IDs y Clase*/
 .hastag{
-    color: #ffc900
+    color: #ffc900;   
 }
+.seccion{
+    /* Se puede juntar el paddin en una sola instrucción sentido agujas reloj*/
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
 #experiencia{
     background-color: white ;
     color: #222
 }
+#sobremi{
+    
+}
+#portfolio{
+    border-top: 1px solid #ffc900; 
+}
+
+
