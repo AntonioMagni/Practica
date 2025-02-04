@@ -55,11 +55,25 @@ cite{
     background-color: white ;
     color: #222
 }
-#sobremi{
-    
-}
+
 #portfolio{
-    border-top: 1px solid #ffc900; 
+    border-top: 1px solid #ffc900;
+    h2 {
+        text-align: center;
+    } 
 }
 
+#inicio{
+    background-image: url("../Imagenes/Cabecera.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 280px;   
+}
+
+#sobremi{
+   img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+}
 
