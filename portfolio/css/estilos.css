@@ -10,8 +10,7 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: 200;
-    
+    font-weight: 200; 
 }
 
 h2 {
@@ -25,18 +24,59 @@ h2 {
     line-height: 50px;
 }
 
+/* Se configura los h3*/
 h3 {
     color: white;
     font-size: 18px;
     font-weight: 300;
 }
 
+/* Se configura section*/
+
+section{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+/* Se configura los p*/
 p{
     text-align: justify;
 }
 
+/* */
 cite{
     font-weight: 300;
+}
+
+i{
+    font-size: 24px;
+}
+
+/* Resalta el color del icono de las redes sociales al pasar el mouse*/
+i:hover{
+    color: #ffc900;
+}
+
+/* Hacemos que los iconos de las redes sociales sean blancos*/
+a:any-link{
+    color: white;
+}
+
+a:-webkit-any-link{
+    color: white; 
+}
+
+a:-moz-any-link{
+    color: white;
+}
+
+/* Se centran los iconos de las redes sociales*/
+li{
+    float: left;
+    text-align: center;
+    margin-right: 15px;
 }
 
 /* CSS IDs y Clase*/
@@ -45,6 +85,7 @@ cite{
 }
 .seccion{
     /* Se puede juntar el paddin en una sola instrucción sentido agujas reloj*/
+
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 15px;
@@ -61,6 +102,12 @@ cite{
     h2 {
         text-align: center;
     } 
+}
+
+#redessociales{
+    margin-top: 20px;
+    list-style: none;
+
 }
 
 #inicio{
