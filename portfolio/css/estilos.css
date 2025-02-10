@@ -34,6 +34,7 @@ h3 {
 nav{
     position: fixed;
     width: 100%;
+    height: 60px;
     background-color: #222;
     border-bottom: 1px solid white;
     padding-top: 10px;
@@ -77,6 +78,11 @@ i:hover{
     color: #ffc900;
 }
 
+/*Quitamos la linea de subrayado de los partados de la cabecera*/
+a{
+    text-decoration: none;
+}
+
 /* Hacemos que los iconos de las redes sociales sean blancos*/
 a:any-link{
     color: white;
@@ -89,6 +95,11 @@ a:-webkit-any-link{
 a:-moz-any-link{
     color: white;
 }
+
+a:hover{
+    color: #ffc900;
+}
+
 ul{
     list-style: none;
 }
@@ -139,7 +150,7 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 280px;
-    padding-top: 95px;   
+    padding-top: 80px;   
 }
 
 #sobremi{
