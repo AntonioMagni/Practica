@@ -219,7 +219,7 @@ button{
     background-color: #191919;
     border-radius: 30px;
 }
-.card img{
+.card img, .card video, .card iframe{
     border-radius: 30px 30px 0 0;
 }
 .card h3{
@@ -246,4 +246,89 @@ button{
 .card .masinfo button{
     float: right;
     font-size: 11px;
+}
+
+/*Card Experiencia*/
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(4,350px);
+    grid-gap:10px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+@media(min-width: 400px){
+    .gridexp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    }
+}
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.cardexp h3{
+    margin-bottom: 20px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+}
+.cardexp ul{
+   display: flex;
+   justify-content: flex-end;
+}
+.cardexp li{
+    margin-left: 30px;
+}
+
+/*Formulario*/
+.itemform{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.itemform label{
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type="submit"]{
+    background-color: #222;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+#contactar{
+    background-color: #ffc900;
+    color: black
+}
+#contactar h3{
+    color: black;
+}
+
+button:hover{
+    background-color: rgb(105, 105, 247);
+    color: white;
+}
+#b:hover{
+    background-color: rgb(26, 26, 248);
+    color: white;
 }
